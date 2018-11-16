@@ -2,21 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import tensorflow as tf
-import data_utils
-import viz
 import re
-import cameras
 import json
 import os
-import time
-from predict_3dpose import create_model
-import cv2
+
 import imageio
 import logging
-import scipy as sp
-from pprint import pprint
-from scipy.interpolate import interp1d
 from scipy.interpolate import UnivariateSpline
+
+from pose3d_baseline import data_utils
+from pose3d_baseline import viz
+from pose3d_baseline import cameras
+from pose3d_baseline.predict_3dpose import create_model
 
 FLAGS = tf.app.flags.FLAGS
 

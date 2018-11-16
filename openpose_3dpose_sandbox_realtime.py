@@ -3,18 +3,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import tensorflow as tf
-import data_utils
-import viz
 import re
-import cameras
 import json
 import os
-from predict_3dpose import create_model
 import cv2
-import imageio
-import time
 import logging
 import glob
+
+from pose3d_baseline import data_utils
+from pose3d_baseline import viz
+from pose3d_baseline import cameras
+from pose3d_baseline.predict_3dpose import create_model
+
 FLAGS = tf.app.flags.FLAGS
 
 order = [15, 12, 25, 26, 27, 17, 18, 19, 1, 2, 3, 6, 7, 8]

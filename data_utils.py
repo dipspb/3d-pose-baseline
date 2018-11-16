@@ -5,13 +5,11 @@ from __future__ import division
 
 import os
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-import cameras
-import viz
 import h5py
 import glob
 import copy
+
+from pose3d_baseline import cameras
 
 # Human3.6m IDs for training and testing
 TRAIN_SUBJECTS = [1,5,6,7,8]

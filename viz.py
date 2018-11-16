@@ -1,12 +1,8 @@
 
 """Functions to visualize human poses"""
 
-import matplotlib.pyplot as plt
 import data_utils
 import numpy as np
-import h5py
-import os
-from mpl_toolkits.mplot3d import Axes3D
 
 def show3Dpose(channels, ax, lcolor="#3498db", rcolor="#e74c3c", add_labels=False): # blue, orange
   """

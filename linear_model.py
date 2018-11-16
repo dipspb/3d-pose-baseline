@@ -5,14 +5,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from tensorflow.python.ops import variable_scope as vs
-
 import os
 import numpy as np
-from six.moves import xrange  # pylint: disable=redefined-builtin
+
 import tensorflow as tf
-import data_utils
-import cameras as cam
+from tensorflow.python.ops import variable_scope as vs
 
 def kaiming(shape, dtype, partition_info=None):
   """Kaiming initialization as described in https://arxiv.org/pdf/1502.01852.pdf

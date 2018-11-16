@@ -5,24 +5,20 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import math
 import os
-import random
 import sys
 import time
-import h5py
-import copy
 
 import matplotlib.pyplot as plt
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-import procrustes
 
-import viz
-import cameras
-import data_utils
-import linear_model
+from pose3d_baseline import procrustes
+from pose3d_baseline import viz
+from pose3d_baseline import cameras
+from pose3d_baseline import data_utils
+from pose3d_baseline import linear_model
 
 tf.app.flags.DEFINE_float("learning_rate", 1e-3, "Learning rate")
 tf.app.flags.DEFINE_float("dropout", 1, "Dropout keep probability. 1 means no dropout")
